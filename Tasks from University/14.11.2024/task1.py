@@ -13,7 +13,7 @@ person2 = Person("Aleksandar", "Stoimenov", 28, "Russia")
 print(person2)
 
 # 2
-class Student(Person):
+class Student(Person):sdf
     def __init__(self, name, family, nationality, age, university, yearofstudy):
         super().__init__(name, family, nationality, age)
         self.university = university
