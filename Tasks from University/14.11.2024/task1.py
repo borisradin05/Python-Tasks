@@ -34,7 +34,6 @@ class Lecturer(Person):
         self.university = university
         self.experience = experience
     def print(self):
-        super().print()
         print(f"He works at {self.university} and has {self.experience} years of experience")
 lecturer1 = Lecturer("Stefan", "Dimitrov", 45, "Bulgaria", "Sofia University", 10)
 print(lecturer1)
