@@ -5,4 +5,4 @@ def transformBinaryToDecimal(binary_str):
     return decimal_number
 
 decimal_number = transformBinaryToDecimal(input())
-print(decimal_number)  #
+print(decimal_number)  
