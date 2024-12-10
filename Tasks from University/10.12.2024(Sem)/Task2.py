@@ -2,11 +2,14 @@ class NumberObject:
     def __init__(self, value):
         self.value = value
 
-class NumberObjectList:
-    def __init__(self):
-        self.objects = []
+def create_objects(n):
+    for i in range(n):
+        obj = NumberObject(2 * i + 1)
+        objects = []
+        objects.append(obj)
+    return objects
 
-    def create_objects(self, n):
-        for i in range(n):
-            obj = NumberObject(2 * i + 1)
-            self.objects.append(obj)
+objectsGlobal = create_objects(5)
+for i in range(len(objectsGlobal)):
+    print(objectsGlobal[i].value)
+

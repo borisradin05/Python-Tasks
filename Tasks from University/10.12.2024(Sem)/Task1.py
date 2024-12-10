@@ -13,4 +13,7 @@ class ClassList:
             return 0
         return sum(self.numbers) / len(self.numbers)
     
-
+nums = [1,"5", 2,3,4,5, "ivan"]
+obj = ClassList(nums)
+obj.PrintNumbers()
+print(obj.CalculateAverage())
