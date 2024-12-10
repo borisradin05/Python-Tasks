@@ -5,10 +5,12 @@ class ClassList:
             if isinstance(num, (int, float)):
                 self.numbers.append(num)
 
-    def print_numbers(self):
+    def PrintNumbers(self):
         print(self.numbers)
 
-    def calculate_average(self):
+    def CalculateAverage(self):
         if len(self.numbers) == 0:
             return 0
         return sum(self.numbers) / len(self.numbers)
+    
+
