@@ -1,4 +1,4 @@
-# 1
+
 class Person:
     def __init__(self, name, family, age, nationality):
         self.name = name
@@ -7,6 +7,8 @@ class Person:
         self.nationality = nationality
     def print(self):
         print(f"{self.name} {self.family} is {self.age} years old and is from {self.nationality}")
+
+
 person1 = Person("Georgi", "Aleksandrov", 65, "Bulgaria")
 print(person1)
 person2 = Person("Aleksandar", "Stoimenov", 28, "Russia")
@@ -22,6 +24,8 @@ class Student(Person):
         super().print()
         print(f"He studies at {self.university} and is in year {self.yearofstudy}")
 
+
+
 student1 = Student("Ivan", "Petrov", 35, "Bulgaria", "Sofia University", 3)
 print(student1)
 student2 = Student("Boris", "Ivanov", 25, "Russia", "Moscow University", 1)
@@ -35,6 +39,9 @@ class Lecturer(Person):
         self.experience = experience
     def print(self):
         print(f"He works at {self.university} and has {self.experience} years of experience")
+
+
+        
 lecturer1 = Lecturer("Stefan", "Dimitrov", 45, "Bulgaria", "Sofia University", 10)
 print(lecturer1)
 lecturer2 = Lecturer("Cvetelina", "Stoqnova", 25, "Russia", "Moscow University", 5)
