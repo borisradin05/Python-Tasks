@@ -9,11 +9,11 @@ double degreesToRadians(double degrees) {
 
 int main() {
     double degrees;
-    printf("Enter degrees: ");
+    printf("Въведете градуси: ");
     scanf("%lf", &degrees);
 
     double radians = degreesToRadians(degrees);
-    printf("%.2f degrees is equal to %.2f radians\n", degrees, radians);
+    printf("%.2f градуси е равно на %.2f радиани\n", degrees, radians);
 
     return 0;
 }

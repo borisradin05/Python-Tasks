@@ -2,7 +2,7 @@
 
 int main() {
     char symbol;
-    printf("Enter a symbol to build the border: ");
+    printf("Въведете символ: ");
     scanf(" %c", &symbol);
 
     int width = 10;

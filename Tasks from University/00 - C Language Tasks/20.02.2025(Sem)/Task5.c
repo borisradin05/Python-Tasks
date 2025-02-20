@@ -3,8 +3,7 @@
 int main() {
     float inches, millimeters, centimeters, decimeters, meters;
 
-    printf("Welcome to the Inches Converter!\n");
-    printf("Please enter the length in inches: ");
+    printf("Въведете дължина в инчове: ");
     scanf("%f", &inches);
 
     millimeters = inches * 25.4;
@@ -12,11 +11,11 @@ int main() {
     decimeters = inches * 0.254;
     meters = inches * 0.0254;
 
-    printf("\n%.2f inches is equal to:\n", inches);
-    printf("%.2f millimeters\n", millimeters);
-    printf("%.2f centimeters\n", centimeters);
-    printf("%.2f decimeters\n", decimeters);
-    printf("%.2f meters\n", meters);
+    printf("\n%.2f Инча е равно на:\n", inches);
+    printf("%.2f милиметра\n", millimeters);
+    printf("%.2f сантиметра\n", centimeters);
+    printf("%.2f дециметра\n", decimeters);
+    printf("%.2f метра\n", meters);
 
     return 0;
 }

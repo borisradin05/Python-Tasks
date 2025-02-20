@@ -4,10 +4,10 @@ int main() {
     int height, i, j, k;
     char symbol;
 
-    printf("Enter the height of the triangle: ");
+    printf("Въведете височината на триъгълника: ");
     scanf("%d", &height);
 
-    printf("Enter the symbol to draw the triangle: ");
+    printf("Въведете символа за рисуване на триъгълника: ");
     scanf(" %c", &symbol);
 
     for (i = 1; i <= height; i++) {
