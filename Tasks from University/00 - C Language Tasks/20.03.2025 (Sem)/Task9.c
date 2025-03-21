@@ -2,9 +2,10 @@
 
 int main() {
     int arr[] = {2, 1, 1, 2, 3, 3, 2, 2, 2, 1};
-    int size = sizeof(arr) / sizeof(arr[0]);
+    int size = sizeof(arr);
 
-    int maxCount = 0, currentCount = 1;
+    int maxCount = 0;
+    int currentCount = 1;
     int maxElement = arr[0];
 
     for (int i = 0; i < size - 1; i++) 

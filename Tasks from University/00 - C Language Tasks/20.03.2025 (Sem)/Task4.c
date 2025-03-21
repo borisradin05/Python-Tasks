@@ -1,9 +1,15 @@
 #include <stdio.h>
 
+/*
+ 1 2 3 4 5
+    n = 5
+    k = 2
+4, 5, 1, 2, 3
+ */
 void rotateArray(int arr[], int n, int k) 
 {
     int temp[n];
-    k = k % n;
+    //k = k % n;
 
     for (int i = 0; i < n; i++) 
     {
@@ -18,7 +24,8 @@ void rotateArray(int arr[], int n, int k)
 
 int main() 
 {
-    int n, k;
+    int n = 0;
+    int k = 0;
 
     printf("Въведете броя на елементите в масива (N): ");
     scanf("%d", &n);

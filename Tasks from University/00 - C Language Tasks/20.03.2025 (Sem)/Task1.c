@@ -13,7 +13,10 @@ int main()
         scanf("%d", &arr[i]);
     }
 
-    int maxLength = 1, currentLength = 1, startIndex = 0, maxStartIndex = 0;
+    int maxLength = 1;
+    int currentLength = 1;
+    int startIndex = 0;
+    int maxStartIndex = 0;
 
     for (int i = 1; i < N; i++)
     {

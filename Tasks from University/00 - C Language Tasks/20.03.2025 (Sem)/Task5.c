@@ -18,7 +18,8 @@ void sortDescending(int arr[], int n)
 
 int main() 
 {
-    int n, k;
+    int n;
+    int k;
 
     printf("Въведете броя на елементите (N): ");
     scanf("%d", &n);

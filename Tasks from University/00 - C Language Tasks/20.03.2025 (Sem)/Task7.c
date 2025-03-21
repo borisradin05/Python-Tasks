@@ -6,15 +6,15 @@
 */
 void findSequenceWithSum(int arr[], int size, int targetSum) 
 {
-    for (int start = 0; start < size; start++) 
+    for (int i = 0; i < size; i++) 
     {
         int sum = 0;
-        for (int end = start; end < size; end++) 
+        for (int j = i; j < size; j++) 
         {
-            sum += arr[end];
+            sum += arr[j];
             if (sum == targetSum) {
                 printf("Намерена последователност: ");
-                for (int i = start; i <= end; i++) 
+                for (int i = i; i <= j; i++) 
                 {
                     printf("%d ", arr[i]);
                 }
@@ -28,7 +28,8 @@ void findSequenceWithSum(int arr[], int size, int targetSum)
 
 int main() 
 {
-    int n, targetSum;
+    int n;
+    int targetSum;
 
     printf("Въведете размера на масива: ");
     scanf("%d", &n);

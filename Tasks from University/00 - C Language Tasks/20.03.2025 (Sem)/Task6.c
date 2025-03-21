@@ -2,8 +2,10 @@
 
 void findLongestSubsequence(int arr[], int n) 
 {
-    int maxLength = 1, currentLength = 1;
-    int startIndex = 0, maxStartIndex = 0;
+    int maxLength = 1; 
+    int currentLength = 1;
+    int startIndex = 0;
+    int maxStartIndex = 0;
     int isIncreasing = 0;
 
     for (int i = 1; i < n; i++) 

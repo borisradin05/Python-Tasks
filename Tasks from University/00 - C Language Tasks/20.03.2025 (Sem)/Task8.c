@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define MAX_SIZE 20
+#define biggestSize 20
 
 void printArray(int arr[], int size) 
 {
@@ -12,7 +12,7 @@ void printArray(int arr[], int size)
 }
 
 int main() {
-    int arr[MAX_SIZE] = {0};
+    int arr[biggestSize] = {0};
     int currentSize = 10;
 
     printf("Въведете 10 числа:\n");
@@ -24,7 +24,7 @@ int main() {
     printf("Начален масив:\n");
     printArray(arr, currentSize);
 
-    while (currentSize < MAX_SIZE) 
+    while (currentSize < biggestSize) 
     {
         int number, position;
 
