@@ -18,7 +18,7 @@ int main()
     {
         if (i % 2 == 1) 
         {
-            if (arr[i - 1] >= arr[i]) 
+            if (arr[i - 1] > arr[i]) 
             {
                 isValid = 0;
                 break;
@@ -26,7 +26,7 @@ int main()
         } 
         else 
         {
-            if (arr[i - 1] <= arr[i]) 
+            if (arr[i - 1] < arr[i]) 
             {
                 isValid = 0;
                 break;

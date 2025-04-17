@@ -19,11 +19,11 @@ int main()
     }
     if(minutes<10)
     {
-    printf("%d:0%d",hours,minutes);
+    printf("%d:%02d",hours,minutes);
     }
     else
     {
-       printf("%d:%d",hours,minutes);
+       printf("%d:%02d",hours,minutes);
     }
 
     return 0;
