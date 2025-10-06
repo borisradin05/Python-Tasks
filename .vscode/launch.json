@@ -2,6 +2,62 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Task9",
+            "request": "launch",
+            "mainClass": "Task9",
+            "projectName": "Python-Tasks_97720423"
+        },
+        {
+            "type": "java",
+            "name": "Task15",
+            "request": "launch",
+            "mainClass": "Task15",
+            "projectName": "Python-Tasks_97720423"
+        },
+        {
+            "type": "java",
+            "name": "Task11",
+            "request": "launch",
+            "mainClass": "Task11",
+            "projectName": "Python-Tasks_97720423"
+        },
+        {
+            "type": "java",
+            "name": "Task10",
+            "request": "launch",
+            "mainClass": "Task10",
+            "projectName": "Python-Tasks_97720423"
+        },
+        {
+            "type": "java",
+            "name": "Task8",
+            "request": "launch",
+            "mainClass": "Task8",
+            "projectName": "Python-Tasks_97720423"
+        },
+        {
+            "type": "java",
+            "name": "Task3",
+            "request": "launch",
+            "mainClass": "Task3",
+            "projectName": "Python-Tasks_97720423"
+        },
+        {
+            "type": "java",
+            "name": "Task2",
+            "request": "launch",
+            "mainClass": "Task2",
+            "projectName": "Python-Tasks_97720423"
+        },
+        {
+            "type": "java",
+            "name": "Task1",
+            "request": "launch",
+            "mainClass": "Task1",
+            "projectName": ""
+        },
+        {
             "name": "Your own server",
             "request": "launch",
             "type": "al",
