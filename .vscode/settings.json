@@ -1,5 +1,12 @@
 {
     "files.associations": {
         "stdio.h": "c"
-    }
+    },
+    "java.project.sourcePaths": [
+        "Tasks from University/05 - Java Tasks/PNPE 13.10.2025 (lab)/Task 3",
+        "Tasks from University/05 - Java Tasks/PNPE 13.10.2025 (lab)/Task 2",
+        "Tasks from University/05 - Java Tasks/PNPE 13.10.2025 (lab)/Task 1",
+        "Tasks from University/05 - Java Tasks/PNPE 06.10.2025 (lab)",
+        "Tasks from University/05 - Java Tasks/PNPE 13.10.2025 (lab)/Task 4"
+    ]
 }
