@@ -3,6 +3,10 @@
         "stdio.h": "c"
     },
     "java.project.sourcePaths": [
+        "Tasks from University/05 - Java Tasks/PNPE 20.10.2025 (Lab)/Task4",
+        "Tasks from University/05 - Java Tasks/PNPE 20.10.2025 (Lab)/Task3",
+        "Tasks from University/05 - Java Tasks/PNPE 20.10.2025 (Lab)/Task2",
+        "Tasks from University/05 - Java Tasks/PNPE 20.10.2025 (Lab)/Task1",
         "Tasks from University/05 - Java Tasks/PNPE 13.10.2025 (lab)/Task 4",
         "Tasks from University/05 - Java Tasks/PNPE 13.10.2025 (lab)/Task 3",
         "Tasks from University/05 - Java Tasks/PNPE 13.10.2025 (lab)/Task 2",
@@ -17,6 +21,7 @@
         "Tasks from University/05 - Java Tasks/13.10.2025 (Sem)/Task3",
         "Tasks from University/05 - Java Tasks/13.10.2025 (Sem)/Task20",
         "Tasks from University/05 - Java Tasks/13.10.2025 (Sem)/Task2",
+        "Tasks from University/05 - Java Tasks/13.10.2025 (Sem)/Task19",
         "Tasks from University/05 - Java Tasks/13.10.2025 (Sem)/Task18",
         "Tasks from University/05 - Java Tasks/13.10.2025 (Sem)/Task17",
         "Tasks from University/05 - Java Tasks/13.10.2025 (Sem)/Task16",
@@ -27,6 +32,6 @@
         "Tasks from University/05 - Java Tasks/13.10.2025 (Sem)/Task11",
         "Tasks from University/05 - Java Tasks/13.10.2025 (Sem)/Task10",
         "Tasks from University/05 - Java Tasks/13.10.2025 (Sem)/Task1",
-        "Tasks from University/05 - Java Tasks/13.10.2025 (Sem)/Task19"
+        "Tasks from University/05 - Java Tasks/PNPE 20.10.2025 (Lab)/Task 1"
     ]
 }
