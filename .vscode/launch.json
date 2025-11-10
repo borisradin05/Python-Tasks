@@ -3,6 +3,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Task3MainLab10112025",
+            "request": "launch",
+            "mainClass": "Task3MainLab10112025",
+            "projectName": "Python-Tasks_97720423"
+        },
+        {
+            "type": "java",
+            "name": "Task2MainLab10112025",
+            "request": "launch",
+            "mainClass": "Task2MainLab10112025",
+            "projectName": "Python-Tasks_97720423"
+        },
+        {
+            "type": "java",
+            "name": "Task1MainLab10112025",
+            "request": "launch",
+            "mainClass": "Task1MainLab10112025",
+            "projectName": "Python-Tasks_97720423"
+        },
+        {
+            "type": "java",
             "name": "Task3MaxSem27102025",
             "request": "launch",
             "mainClass": "Task3MaxSem27102025",
