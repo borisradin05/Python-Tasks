@@ -1,0 +1,71 @@
+CREATE DATABASE UniversityЗадачаs;
+
+-- Задача 1:
+
+CREATE TABLE Author (
+    AuthorID INT PRIMARY KEY AUTO_INCREMENT,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50)
+);
+
+CREATE TABLE Publisher (
+    PublisherID INT PRIMARY KEY AUTO_INCREMENT,
+    Name VARCHAR(100)
+);
+
+CREATE TABLE Book (
+    BookID INT PRIMARY KEY AUTO_INCREMENT,
+    Title VARCHAR(100),
+    Price DECIMAL(6,2),
+    AuthorID INT,
+    PublisherID INT,
+    FOREIGN KEY (AuthorID) REFERENCES Author(AuthorID) ON DELETE CASCADE,
+    FOREIGN KEY (PublisherID) REFERENCES Publisher(PublisherID)
+);
+
+-- Задача 2:
+INSERT INTO Author (FirstName, LastName) VALUES
+('Ivan', 'Petrov'),
+('Maria', 'Ivanova'),
+('Georgi', 'Georgiev');
+
+INSERT INTO Publisher (Name) VALUES
+('Ciela'),
+('Hermes'),
+('SoftPress');
+
+INSERT INTO Book (Title, Price, AuthorID, PublisherID) VALUES
+('Python Basics', 25.00, 1, 1),
+('MySQL Essentials', 30.00, 2, 2),
+('Data Science Intro', 22.50, 3, 3);
+
+-- Задача 3:
+UPDATE Book SET Price = Price + 5 WHERE Title = 'Python Basics';
+DELETE FROM Book WHERE Title = 'Data Science Intro';
+
+-- Задача 4:
+SELECT * FROM Book WHERE Price BETWEEN 20 AND 35;
+
+-- Задача 5: 
+CREATE TABLE Readers 
+(
+    ReaderID INT PRIMARY KEY AUTO_INCREMENT,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    Gender CHAR(1)
+);
+
+INSERT INTO Readers (FirstName, LastName, Gender) VALUES
+('Анна', 'Петрова', 'F'),
+('Георги', 'Георгиев', 'M'),
+('Мария', 'Иванова', 'F'),
+('Иван', 'Георгиев', 'M');
+
+SELECT * FROM Readers WHERE Gender = 'F';
+
+
+-- Задача 6: 
+SELECT * FROM Readers WHERE FirstName = 'Георги' OR LastName = 'Георгиев';
+
+
+
