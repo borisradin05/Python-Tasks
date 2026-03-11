@@ -19,6 +19,7 @@ CREATE TABLE Book (
     Price DECIMAL(6,2),
     AuthorID INT,
     PublisherID INT,
+    Country VARCHAR(100),
     FOREIGN KEY (AuthorID) REFERENCES Author(AuthorID) ON DELETE CASCADE,
     FOREIGN KEY (PublisherID) REFERENCES Publisher(PublisherID)
 );
@@ -34,10 +35,10 @@ INSERT INTO Publisher (Name) VALUES
 ('Hermes'),
 ('SoftPress');
 
-INSERT INTO Book (Title, Price, AuthorID, PublisherID) VALUES
-('Python Basics', 25.00, 1, 1),
-('MySQL Essentials', 30.00, 2, 2),
-('Data Science Intro', 22.50, 3, 3);
+INSERT INTO Book (Title, Price, AuthorID, PublisherID, Country) VALUES
+('Python Basics', 25.00, 1, 1, 'Bulgaria'),
+('MySQL Essentials', 30.00, 2, 2, 'Romania'),
+('Data Science Intro', 22.50, 3, 3, 'Azerbaijan');
 
 -- Задача 3:
 UPDATE Book SET Price = Price + 5 WHERE Title = 'Python Basics';
@@ -66,6 +67,56 @@ SELECT * FROM Readers WHERE Gender = 'F';
 
 -- Задача 6: 
 SELECT * FROM Readers WHERE FirstName = 'Георги' OR LastName = 'Георгиев';
+
+-- 10.03.2026 Упражнение 3
+-- Задача 1:
+CREATE TABLE BookReader 
+(
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    ReaderID INT,
+    BookID INT,
+    DateTaken VARCHAR(50),
+    FOREIGN KEY (BookID) REFERENCES Book(ID),
+    FOREIGN KEY (ReaderID) REFERENCES Readers(ID)
+);
+
+SELECT * FROM Readers
+WHERE ReaderID NOT IN (
+    SELECT DISTINCT ReaderID FROM BookLoan
+);
+
+-- Задача 2:
+SELECT Book.Title, Book.Price, Author.FirstName, Author.LastName
+FROM Book
+LEFT JOIN Author ON Book.ID = Author.ID;
+
+-- Задача 3:
+SELECT * FROM Book
+FROM Book
+WHERE Country = 'Bulgaria';
+
+-- Задача 4:
+SELECT DISTINCT Title
+FROM Book
+WHERE BookID IN (
+    SELECT BookID
+    FROM BookReader
+    WHERE ReaderID IN (
+        SELECT ReaderID
+        FROM Readers
+        WHERE Email LIKE '%@example.com'
+    )
+);
+
+-- Задача 5:
+SELECT FirstName, LastName
+FROM Readers
+WHERE ReaderID IN (
+    SELECT ReaderID
+    FROM BookReader
+    WHERE DateTaken BETWEEN '2023-01-01' AND '2023-12-31'
+);
+
 
 
 
